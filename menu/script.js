@@ -26,11 +26,17 @@ const completePurchases = () => {
         const itemsInCart = document.querySelectorAll('ul li');
         itemsInCart.forEach(item => item.remove());
         
+        //Gera um alerta com agradecimento da compra
+        alert('Sua compra foi realizada com sucesso. 😘 ❤️ Volte sempre!')
+
         // serve para se necessário redefinir o valor total para 0
         valorTotal = 0;
 
         // Atualiza o conteúdo do elemento HTML que exibe o valor total
         totalDeDesconto.textContent = 'Seu valor total a pagar é R$0.00';
+
+        //Chama a função para fechar o carrinho
+        backCart()
     });
 };
 
