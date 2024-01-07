@@ -12,14 +12,13 @@
 }
 
 body {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-
 }
 
 .logo {
@@ -37,7 +36,6 @@ video {
 }
 
 .header {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +52,6 @@ a {
     color: #101820;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 a:hover {
@@ -83,6 +80,30 @@ a:active {
     }
 }
 
+@media screen and (max-width:1000px) {
+
+    a {
+        font-size: 18px;
+    }
+
+    .header-icons {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:282px) {
+
+    a {
+        font-size: 15px;
+    }
+
+    .header-icons {
+        gap: 20px;
+    }
+}
+
+/*------------------------------------*/
+
 main {
     position: relative;
     display: flex;
@@ -104,47 +125,43 @@ form {
     opacity: 0.8;
 }
 
-input{
+input {
     padding-left: 10px;
     font-size: 30px;
     height: 50px;
     border-radius: 5px;
     border: none;
     text-align: left;
-
 }
 
-input:nth-last-child(2){
+input:nth-last-child(2) {
     height: 100px;
     text-align: left;
 }
 
-input::placeholder{
-   font-size: 20px;
-   padding-left: 10px;
-   text-align:left;
+input::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: left;
 }
 
-#text{
+#text {
     padding-left: 10px;
     font-size: 20px;
     border-radius: 5px;
-border: none;
+    border: none;
 }
 
-
-
-button{
+button {
     margin-top: 40px;
     height: 50px;
     font-size: 30px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-   
 }
 
-button:hover{
+button:hover {
     animation: translateY 0.8s infinite alternate;
 }
 
@@ -156,7 +173,19 @@ button:hover{
     opacity: 0.8;
     z-index: 2;
     text-align: center;
-    
+}
+
+@media screen and (max-width:1000px) {
+
+    main {
+        width: 100%;
+        gap: 20px;
+    }
+
+    form {
+        width: 90%;
+        padding: 30px;
+    }
 }
 
 /*------------------------*/

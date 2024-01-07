@@ -12,14 +12,13 @@
 }
 
 body {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-
 }
 
 .logo {
@@ -28,7 +27,7 @@ body {
     background-color: #F1BE48;
     opacity: 0.8;
     z-index: 2;
-text-align: center;
+    text-align: center;
 }
 
 video {
@@ -37,7 +36,7 @@ video {
 }
 
 .header {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,23 +50,22 @@ video {
 
 a {
     font-size: 30px;
-    color:  #101820;
+    color: #101820;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 a:hover {
     animation: translateY 0.8s infinite alternate;
     /* para não rodar a animação uma vez só*/
-    color:#FFFF;
+    color: #FFFF;
     text-decoration: overline
 }
 
-a:active{
+a:active {
     animation: translateY 0.8s infinite alternate;
     /* para não rodar a animação uma vez só*/
-    color:#FFFF;
+    color: #FFFF;
     text-decoration: overline
 }
 
@@ -83,8 +81,24 @@ a:active{
     }
 }
 
+@media screen and (max-width:1000px) {
+
+    .container {
+        width: 100%;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    .header-icons {
+        gap: 10px;
+    }
+}
+
 /* -------------------------------------*/
-main{
+
+main {
     display: flex;
     width: 100%;
     height: auto;
@@ -94,15 +108,15 @@ main{
     padding-bottom: 50px;
 }
 
-.since{
+.since {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 790px;
-  
 }
-.text-sobre-left{
+
+.text-sobre-left {
     max-width: 400px;
     display: flex;
     gap: 30px;
@@ -110,11 +124,85 @@ main{
     text-align: left;
 }
 
-.text-sobre-right{
+.text-sobre-right {
     max-width: 500px;
     display: flex;
     gap: 30px;
     padding: 30px;
     text-align: left;
-   
+    padding: 30px;
+}
+
+@media screen and (max-width:1200px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .text-sobre-left {
+        max-width: 1200px;
+        gap: 80px;
+        justify-content: space-between;
+        padding: 80px;
+    }
+
+    .text-sobre-right {
+        width: 100%;
+        gap: 80px;
+        justify-content: space-between;
+        padding: 80px;
+    }
+
+    .since {
+        width: 100%;
+    }
+
+    .direitos {
+        margin: auto;
+        max-width: 300px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .text-sobre-left {
+
+        padding: 30px;
+    }
+
+    .text-sobre-right {
+
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:300px) {
+
+    a {
+        font-size: 15px;
+    }
+
+    .text-sobre-left {
+        width: 100%;
+        height: 100%;
+        gap: 15px;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .text-sobre-right {
+        width: 100%;
+        height: 100%;
+        gap: 15px;
+        justify-content: space-between;
+        padding: 20px;
+    }
 }
