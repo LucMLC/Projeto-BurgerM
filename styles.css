@@ -31,10 +31,6 @@ video {
 }
 
 .header {
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +77,6 @@ a:active {
 
 @media screen and (max-width:1000px) {
     body {
-<<<<<<< HEAD
         height: 100%;
         width: 100%;
     }
@@ -98,32 +93,10 @@ a:active {
 
     .logo {
         width: 100%;
-=======
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .container {
-        max-width: 800px;
-        height: 100vh;
-
-    }
-
-    .logo {
-        min-width: 1000px;
-
-
-    }
-
-    video {
-        max-width: 1000px;
-        height: 230px;
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
     }
 }
 
 @media screen and (max-width:500px) {
-<<<<<<< HEAD
     body {
         height: 100%;
         width: 100%;
@@ -150,43 +123,6 @@ a:active {
     .header-icons {
         gap: 15px;
     }
-=======
-
-    a {
-        font-size: 60px;
-    }
-
-    .container {
-        height: 1600px;
-        position: relative;
-        z-index: -2;
-    }
-
-    .logo {
-        height: 260vh;
-        position: relative;
-        z-index: -2;
-    }
-
-    video {
-        position: relative;
-        z-index: -2;
-        height: 50%;
-    }
-
-    .header {
-        position: fixed;
-        z-index: 2;
-        top: 1%;
-        padding: 50px;
-        margin-left: 10px;
-    }
-
-    .header-icons {
-        gap: 20px;
-    }
-
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
 }
 
 /*---------------------------------------*/
@@ -200,10 +136,6 @@ a:active {
     height: 72vh;
     min-width: 100%;
     z-index: -1;
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
 }
 
 main {
@@ -248,10 +180,6 @@ p {
     border: none;
     border-radius: 20px;
     margin-top: 70px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
 }
 
 @media screen and (max-width:1600px) {
@@ -285,7 +213,6 @@ p {
 
 @media screen and (max-width:1000px) {
 
-<<<<<<< HEAD
     main {
         height: 100%;
         width: 100%;
@@ -294,18 +221,6 @@ p {
     .img-inicio {
         height: 100%;
         width: 100%;
-=======
-
-    main {
-        min-width: 600px;
-
-    }
-
-    .img-inicio {
-
-        height: 72vh;
-        min-width: 1000px;
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
     }
 
 
@@ -317,32 +232,6 @@ p {
         font-size: 40px;
     }
 }
-<<<<<<< HEAD
-=======
-
-@media screen and (max-width:500px) {
-
-    .img-inicio {
-        height: 130vh;
-        min-width: 1000px;
-    }
-
-    h1 {
-        font-size: 130px;
-    }
-
-    p {
-        font-size: 80px;
-    }
-
-    .saiba-mais {
-        width: 450px;
-        height: 40px;
-        font-size: 30px;
-    }
-
-}
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
 
 @media screen and (max-width:500px) {
 
@@ -351,7 +240,6 @@ p {
         width: 100%;
     }
 
-<<<<<<< HEAD
     .text-inicio {
         height: 100%;
         width: 100%;
@@ -421,6 +309,4 @@ p {
     }
 }
 
-=======
->>>>>>> 8d51aa4738aa7f42479ec748b38957e0594ed7fb
 /*----------------------*/
