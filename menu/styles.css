@@ -83,36 +83,6 @@ a:active {
     }
 }
 
-input {
-    width: 150px;
-    font-size: 20px;
-    background: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px #101820;
-    cursor: pointer;
-
-}
-
-
-
-button {
-    background-color: transparent;
-    border: none;
-    width: 30px;
-    height: 40px;
-    cursor: pointer;
-}
-
-input::placeholder {
-    font-size: 20px;
-}
-
-input:active {
-    opacity: 0.5;
-}
-
 /*---------------------*/
 
 main {

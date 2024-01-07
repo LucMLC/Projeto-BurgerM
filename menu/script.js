@@ -1,12 +1,10 @@
 AOS.init();
 
-//Abrir  - fechar - e finalizar compras
+//Abrir - fechar - e finalizar compras
 const cart = document.querySelector('.cart');
 const fecharCart = document.querySelector('.add-itens');
 const cartOpen = document.querySelector('.cart-button');
 const totalDeDesconto = document.querySelector('.total-de-desconto');
-
-
 
 //Abrir carrinho
 const cartVisibel = () => {
@@ -21,11 +19,11 @@ const backCart = () => {
 const completePurchase = document.querySelector('.finalizar-compra');
 
 const completePurchases = () => {
-    completePurchase.addEventListener('click', function () {
+    completePurchase.addEventListener('click', () => {
         // tira todos os elementos <li> do carrinho
         const itemsInCart = document.querySelectorAll('ul li');
         itemsInCart.forEach(item => item.remove());
-        
+
         //Gera um alerta com agradecimento da compra
         alert('Sua compra foi realizada com sucesso. 😘 ❤️ Volte sempre!')
 
@@ -72,7 +70,11 @@ for (let i = 0; i < comprar.length; i++) {
         newRemoveButton.addEventListener('click', function () {
             newProductLi.remove();
             calculateDesconto(-productsPrice); // Remover o desconto quando um produto é removido
+
         });
+
+
+
     });
 }
 
@@ -87,8 +89,11 @@ function calculateDesconto(valor) {
     totalDeDesconto.textContent = `Seu valor total a pagar é R$${valorTotal.toFixed(2)}`;
 }
 
+
 // Ouvintes
+
 cartOpen.addEventListener('click', cartVisibel);
 fecharCart.addEventListener('click', backCart);
+filtrar.addEventListener('click', filter)
 
 
