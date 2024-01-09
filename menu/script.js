@@ -8,12 +8,14 @@ const totalDeDesconto = document.querySelector('.total-de-desconto');
 
 //Abrir carrinho
 const cartVisibel = () => {
-    cart.style.opacity = 1;
+    cart.style.opacity = 1
+    cart.style.zIndex = 8
 };
 
 //Fechar carrinho
 const backCart = () => {
-    cart.style.opacity = 0;
+    cart.style.opacity = 0
+    cart.style.zIndex = -8
 };
 
 const completePurchase = document.querySelector('.finalizar-compra');
@@ -31,7 +33,7 @@ const completePurchases = () => {
         valorTotal = 0;
 
         // Atualiza o conteúdo do elemento HTML que exibe o valor total
-        totalDeDesconto.textContent = 'Seu valor total a pagar é R$0.00';
+        totalDeDesconto.textContent = 'Seu valor total a pagar: R$0.00';
 
         //Chama a função para fechar o carrinho
         backCart()
@@ -86,7 +88,7 @@ function calculateDesconto(valor) {
 
     valorTotal += valor;
 
-    totalDeDesconto.textContent = `Seu valor total a pagar é R$${valorTotal.toFixed(2)}`;
+    totalDeDesconto.textContent = `Valor total a pagar, já com desconto: R$${valorTotal.toFixed(2)}`;
 }
 
 

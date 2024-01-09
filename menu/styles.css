@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -54,7 +54,6 @@ a {
     color: #101820;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 a:hover {
@@ -83,6 +82,55 @@ a:active {
     }
 }
 
+@media screen and (max-width:1000px) {
+
+    a {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        padding-bottom: 20px;
+    }
+
+    a {
+        font-size: 35px;
+    }
+
+    .header-icons {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    a {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    a {
+        font-size: 20px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    a {
+        font-size: 15px;
+    }
+}
+
 /*---------------------*/
 
 main {
@@ -91,8 +139,6 @@ main {
     align-items: center;
     width: 100%;
     height: 100%;
-
-
 }
 
 h1 {
@@ -108,7 +154,6 @@ h1 {
     width: 100%;
     height: 100vh;
     margin-top: 50px;
-
 }
 
 .container-main {
@@ -119,7 +164,6 @@ h1 {
     width: 100%;
     height: 80vh;
 }
-
 
 .cardapio-products {
     display: flex;
@@ -154,7 +198,6 @@ h1 {
     overflow: hidden;
     border-radius: 20px;
     box-shadow: #101820 0.2em 0.1em;
-    ;
 }
 
 .img {
@@ -182,6 +225,55 @@ h1 {
     }
 }
 
+@media screen and (max-width:1100px) {
+
+    .products-video {
+        display: none;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cardapio-products {
+        width: 100%;
+        height: 100%;
+    }
+
+    .products-price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .prices {
+        width: 60%;
+        height: auto;
+    }
+
+    button {
+        margin: 10px auto;
+    }
+
+}
+
+/*------------------------------*/
+.container-footer {
+    margin-top: 90px;
+}
+
 .logo-footer {
     margin-top: 30px;
     width: 100%;
@@ -190,6 +282,41 @@ h1 {
     opacity: 0.8;
     z-index: 2;
     text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+
+    .container-footer {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .logo-footer {
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+
+    .video-footer {
+        height: 200px;
+    }
+
+    .direitos {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .video-footer {
+        height: 200px;
+    }
+
+    .direitos {
+        padding: 20px;
+    }
+
 }
 
 /*------------------------*/
@@ -294,7 +421,7 @@ h1 {
 .cart {
     position: fixed;
     background-color: #FFF;
-    z-index: 8;
+    z-index: -8;
     width: 400px;
     height: 80vh;
     top: 30px;
@@ -309,25 +436,28 @@ h1 {
 
 ul {
     display: flex;
-    flex-direction: row; /* Alterado para linha para ajustar os itens na horizontal */
+    flex-direction: row;
+    /* Alterado para linha para ajustar os itens na horizontal */
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     gap: 20px;
     width: 90%;
     padding: 30px;
-    max-height: 400px; /* Alterado para max-height para permitir a rolagem vertical */
-    overflow-y: auto; /* Habilita rolagem vertical se necessário */
-    overflow-x: auto; 
+    max-height: 400px;
+    /* Alterado para max-height para permitir a rolagem vertical */
+    overflow-y: auto;
+    /* Habilita rolagem vertical se necessário */
+    overflow-x: auto;
 }
 
 li {
     display: flex;
-    
+
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    
+
     margin-top: 0;
     color: #F1BE48;
     text-align: left;
@@ -335,11 +465,11 @@ li {
     overflow: hidden;
 }
 
-span{
+span {
     display: flex;
     align-items: center;
     justify-content: center;
-   gap: 10px;
+    gap: 10px;
 }
 
 .remover {
@@ -350,17 +480,16 @@ span{
     border-radius: 5px;
 }
 
-.total-de-desconto{
-position: absolute;
-bottom: 55px;
-  left: 15px;
+.total-de-desconto {
+    position: absolute;
+    bottom: 55px;
+    left: 15px;
 }
 
-.buttons-final{
-  position: absolute;
-  bottom: 10px;
-  left: 15px;
-
+.buttons-final {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
 }
 
 .finalizar-compra {
@@ -375,4 +504,107 @@ bottom: 55px;
     font-size: 25px;
     background-color: #F1BE48;
     border-radius: 5px;
+}
+
+@media screen and (max-width:1100px) {
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 90%;
+        right: 0px;
+    }
+
+    .itens-cart {
+        width: 100%;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+    li {
+        border: solid 1px Black;
+        padding: 5px;
+    }
+
+    .buttons-final {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height:801px) {
+
+    .total-de-desconto {
+        padding: 10px;
+    }
+
+    .itens-cart {
+        margin-top: 10px;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .total-de-desconto {
+        padding: 20px;
+    }
+
+    .itens-cart {
+        margin-top: 0px;
+        height: 25%;
+    }
+
+    .buttons-final {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .finalizar-compra {
+        width: 90px;
+        font-size: 15px;
+    }
+
+    .add-itens {
+        width: 90px;
+        height: 46px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .total-de-desconto {
+        padding: 10px;
+    }
+
+    .itens-cart {
+        margin-top: 0px;
+        height: 25%;
+        padding-top: 0;
+    }
+
+    .buttons-final {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .finalizar-compra {
+        width: 90px;
+        font-size: 15px;
+    }
+
+    .add-itens {
+        width: 90px;
+        height: 46px;
+        font-size: 15px;
+    }
 }
