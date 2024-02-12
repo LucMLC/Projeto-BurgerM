@@ -36,7 +36,7 @@ entrar em contato com a lanchonete para fazer perguntas ou fornecer feedback.</l
 
  <ol>
   <li>Clone este repositório em sua máquina local usando o seguinte comando:</li>
-  <code>git clone https://github.com/seu-usuario/burguer-martinez.git</code>
+  <code>git clone https://github.com/LucMLC/burguer-martinez.git</code>
   <li>Navegue até o diretório do projeto:</li>
   <code>cd burguer-martinez</code>
   <li>Abra o arquivo <code>index.html</code> em seu navegador da web.</li>
@@ -58,7 +58,7 @@ entrar em contato com a lanchonete para fazer perguntas ou fornecer feedback.</l
   <ol>
   <li>Faça um fork deste repositório clicando no botão "Fork" no canto superior direito desta página.</li>
   <li>Clone seu fork para sua máquina local:</li>
-  <code>git clone https://github.com/seu-usuario/burguer-martinez.git</code>
+  <code>git clone https://github.com/LucMLC/burguer-martinez.git</code>
   <li>Crie uma branch para suas alterações:</li>
   <code>git checkout -b minha-alteracao</code>
   <li>Faça suas alterações e adicione, comite e faça push para a sua branch:</li>
@@ -72,7 +72,7 @@ git push origin minha-alteracao</code>
 
   <h2>Autor</h2>
 
-  <p>Este projeto foi desenvolvido por <a href="https://github.com/LucMLC">Martinez Engine Software</a>.</p>
+  <p>Este projeto foi desenvolvido por <a href="https://github.com/LucMLC">Martinez software engineer</a>.</p>
 
  <p>Esse é o README padrão para o projeto Burguer Martinez. Sinta-se à vontade para personalizá-lo de acordo com as
         necessidades do seu projeto. Se precisar de mais alguma coisa, não hesite em entrar em contato.</p>
