@@ -8,7 +8,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Oleo Script', 'Poppins';
+    font-family: 'Oleo Script', 'Poppins';   
+}
+
+body{
+    background: #FFFF;
 }
 
 .container {
