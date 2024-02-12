@@ -4,7 +4,7 @@
 <br>
 <br>
 <div>  
-  <img src="https://raw.githubusercontent.com/LucMLC/Projeto-Joken-P-/a3ca5cdf8bf36248e7d9e0ba089ff499d4ea1704/assets/Captura%20de%20tela%202024-01-31%20230523.png" width="50%">  
+  <img src="[https://raw.githubusercontent.com/LucMLC/Projeto-Joken-P-/a3ca5cdf8bf36248e7d9e0ba089ff499d4ea1704/assets/Captura%20de%20tela%202024-01-31%20230523.png](https://raw.githubusercontent.com/LucMLC/Projeto-BurgerM/main/files/Captura%20de%20tela%202024-02-12%20092406.png)" width="50%">  
   <br>
   <br>
 <img src="https://raw.githubusercontent.com/LucMLC/Projeto-Joken-P-/a3ca5cdf8bf36248e7d9e0ba089ff499d4ea1704/assets/Captura%20de%20tela%202024-01-31%20230621.png" width="50%">
